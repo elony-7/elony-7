@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Ngopi Dulu Massehh</title>
+</head>
+<body>
+  <div id="loginPage" class="page">
+    <h2>Login</h2>
+    <input type="text" id="loginUsername" placeholder="Username">
+    <input type="password" id="loginPassword" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p>Don't have an account? <span class="link-button" onclick="showRegisterPage()">Register</span></p>
+  </div>
+
+  <div id="registerPage" class="page">
+    <h2>Register</h2>
+    <input type="text" id="registerUsername" placeholder="Username">
+    <input type="password" id="registerPassword" placeholder="Password">
+    <button onclick="register()">Register</button>
+    <p>Already have an account? <span class="link-button" onclick="showLoginPage()">Login</span></p>
+  </div>
+
+  <div id="chatPage" class="page">
+    <div id="chatBox"></div>
+    <div class="chat-input-container">
+      <input type="text" id="chatInput" placeholder="Type a message">
+      <button onclick="sendMessage()">Send</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
